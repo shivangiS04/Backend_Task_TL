@@ -1,0 +1,38 @@
+[
+  {
+    "hintId": "h1",
+    "questionId": "q1",
+    "hintText": "Consider using a hash map to store seen numbers",
+    "difficulty": "basic"
+  },
+  {
+    "hintId": "h2",
+    "questionId": "q1",
+    "hintText": "For each number, check if target - number exists in the map",
+    "difficulty": "intermediate"
+  },
+  {
+    "hintId": "h3",
+    "questionId": "q2",
+    "hintText": "Use array methods or string manipulation",
+    "difficulty": "basic"
+  },
+  {
+    "hintId": "h4",
+    "questionId": "q3",
+    "hintText": "Compare the string with its reverse",
+    "difficulty": "basic"
+  },
+  {
+    "hintId": "h5",
+    "questionId": "q4",
+    "hintText": "Each number is the sum of the previous two",
+    "difficulty": "basic"
+  },
+  {
+    "hintId": "h6",
+    "questionId": "q5",
+    "hintText": "Divide the search space in half each iteration",
+    "difficulty": "intermediate"
+  }
+]

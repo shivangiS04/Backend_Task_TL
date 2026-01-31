@@ -1,0 +1,23 @@
+[
+  {
+    "userId": "user_1",
+    "totalAttempts": 2,
+    "successfulAttempts": 2,
+    "successRate": 100,
+    "lastAttemptAt": "2026-01-30T09:12:56.359Z"
+  },
+  {
+    "userId": "user_2",
+    "totalAttempts": 2,
+    "successfulAttempts": 1,
+    "successRate": 50,
+    "lastAttemptAt": "2026-01-30T06:12:56.359Z"
+  },
+  {
+    "userId": "user_3",
+    "totalAttempts": 1,
+    "successfulAttempts": 1,
+    "successRate": 100,
+    "lastAttemptAt": "2026-01-31T04:12:56.359Z"
+  }
+]

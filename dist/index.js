@@ -1,0 +1,47 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const store_1 = require("./data/store");
+const errorHandler_1 = require("./middleware/errorHandler");
+const QuestionService_1 = require("./services/QuestionService");
+const SubmissionService_1 = require("./services/SubmissionService");
+const StatisticsService_1 = require("./services/StatisticsService");
+const HintService_1 = require("./services/HintService");
+const LeaderboardService_1 = require("./services/LeaderboardService");
+const QuestionController_1 = require("./controllers/QuestionController");
+const SubmissionController_1 = require("./controllers/SubmissionController");
+const StatisticsController_1 = require("./controllers/StatisticsController");
+const HintController_1 = require("./controllers/HintController");
+const LeaderboardController_1 = require("./controllers/LeaderboardController");
+const app = (0, express_1.default)();
+const port = process.env.PORT || 3000;
+app.use(express_1.default.json());
+const store = new store_1.DataStore('./data');
+const questionService = new QuestionService_1.QuestionService(store);
+const submissionService = new SubmissionService_1.SubmissionService(store);
+const statisticsService = new StatisticsService_1.StatisticsService(store);
+const hintService = new HintService_1.HintService(store);
+const leaderboardService = new LeaderboardService_1.LeaderboardService(store);
+const questionController = new QuestionController_1.QuestionController(questionService);
+const submissionController = new SubmissionController_1.SubmissionController(submissionService, statisticsService);
+const statisticsController = new StatisticsController_1.StatisticsController(statisticsService);
+const hintController = new HintController_1.HintController(hintService);
+const leaderboardController = new LeaderboardController_1.LeaderboardController(leaderboardService);
+app.get('/api/questions/today', (req, res, next) => questionController.getTodayQuestion(req, res, next));
+app.get('/api/questions/:id', (req, res, next) => questionController.getQuestionById(req, res, next));
+app.get('/api/questions', (req, res, next) => questionController.getAllQuestions(req, res, next));
+app.post('/api/submissions', (req, res, next) => submissionController.submitCode(req, res, next));
+app.get('/api/submissions/:userId', (req, res, next) => submissionController.getSubmissionsByUser(req, res, next));
+app.get('/api/statistics/:userId', (req, res, next) => statisticsController.getStatistics(req, res, next));
+app.get('/api/statistics', (req, res, next) => statisticsController.getAllStatistics(req, res, next));
+app.get('/api/hints/:questionId', (req, res, next) => hintController.getHints(req, res, next));
+app.get('/api/leaderboard', (req, res, next) => leaderboardController.getLeaderboard(req, res, next));
+app.use(errorHandler_1.errorHandler);
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+});
+exports.default = app;
+//# sourceMappingURL=index.js.map

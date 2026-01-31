@@ -1,0 +1,47 @@
+[
+  {
+    "id": "q1",
+    "title": "Two Sum",
+    "difficulty": "easy",
+    "problemStatement": "Given an array of integers nums and an integer target, return the indices of the two numbers that add up to target.",
+    "sampleInput": "[2, 7, 11, 15]\ntarget = 9",
+    "sampleOutput": "[0, 1]",
+    "createdAt": "2026-01-31T05:12:56.358Z"
+  },
+  {
+    "id": "q2",
+    "title": "Reverse String",
+    "difficulty": "easy",
+    "problemStatement": "Write a function that reverses a string.",
+    "sampleInput": "hello",
+    "sampleOutput": "olleh",
+    "createdAt": "2026-01-31T05:12:56.359Z"
+  },
+  {
+    "id": "q3",
+    "title": "Palindrome Check",
+    "difficulty": "medium",
+    "problemStatement": "Given a string, determine if it is a palindrome.",
+    "sampleInput": "racecar",
+    "sampleOutput": "true",
+    "createdAt": "2026-01-31T05:12:56.359Z"
+  },
+  {
+    "id": "q4",
+    "title": "Fibonacci Sequence",
+    "difficulty": "medium",
+    "problemStatement": "Generate the first N numbers in the Fibonacci sequence.",
+    "sampleInput": "5",
+    "sampleOutput": "[0, 1, 1, 2, 3]",
+    "createdAt": "2026-01-31T05:12:56.359Z"
+  },
+  {
+    "id": "q5",
+    "title": "Binary Search",
+    "difficulty": "hard",
+    "problemStatement": "Implement binary search on a sorted array.",
+    "sampleInput": "[1, 3, 5, 7, 9]\ntarget = 5",
+    "sampleOutput": "2",
+    "createdAt": "2026-01-31T05:12:56.359Z"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "submissionId": "sub_1",
+    "userId": "user_1",
+    "questionId": "q1",
+    "userCode": "[0, 1]",
+    "status": "correct",
+    "message": "Output matches expected result",
+    "timestamp": "2026-01-30T05:12:56.359Z"
+  },
+  {
+    "submissionId": "sub_2",
+    "userId": "user_1",
+    "questionId": "q2",
+    "userCode": "olleh",
+    "status": "correct",
+    "message": "Output matches expected result",
+    "timestamp": "2026-01-30T09:12:56.359Z"
+  },
+  {
+    "submissionId": "sub_3",
+    "userId": "user_2",
+    "questionId": "q1",
+    "userCode": "[1, 0]",
+    "status": "incorrect",
+    "message": "Output does not match expected result",
+    "timestamp": "2026-01-30T05:12:56.359Z"
+  },
+  {
+    "submissionId": "sub_4",
+    "userId": "user_2",
+    "questionId": "q1",
+    "userCode": "[0, 1]",
+    "status": "correct",
+    "message": "Output matches expected result",
+    "timestamp": "2026-01-30T06:12:56.359Z"
+  },
+  {
+    "submissionId": "sub_5",
+    "userId": "user_3",
+    "questionId": "q3",
+    "userCode": "true",
+    "status": "correct",
+    "message": "Output matches expected result",
+    "timestamp": "2026-01-31T04:12:56.359Z"
+  }
+]

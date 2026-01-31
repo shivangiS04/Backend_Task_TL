@@ -1,0 +1,1 @@
+{"version":3,"file":"QuestionService.d.ts","sourceRoot":"","sources":["../../src/services/QuestionService.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,UAAU,CAAC;AACpC,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;AAG1C,qBAAa,eAAe;IACd,OAAO,CAAC,KAAK;gBAAL,KAAK,EAAE,SAAS;IAEpC,gBAAgB,IAAI,QAAQ;IAe5B,eAAe,CAAC,EAAE,EAAE,MAAM,GAAG,QAAQ,GAAG,IAAI;IAK5C,eAAe,IAAI,QAAQ,EAAE;CAG9B"}
