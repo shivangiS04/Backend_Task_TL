@@ -354,6 +354,62 @@ The project uses TypeScript with strict type checking. All code should:
 - Follow consistent naming conventions
 - Pass all tests
 
+## Data Models
+
+### Question
+- `id`: Unique identifier
+- `title`: Question title
+- `difficulty`: Easy/Medium/Hard
+- `problemStatement`: Full problem description
+- `sampleInput`: Example input
+- `sampleOutput`: Expected output
+- `createdAt`: Creation timestamp
+
+### Submission
+- `submissionId`: Unique submission ID
+- `userId`: User identifier
+- `questionId`: Question being solved
+- `userCode`: User's submitted code
+- `status`: correct/incorrect/partially_correct
+- `message`: Evaluation feedback
+- `timestamp`: Submission time
+
+### UserStatistics
+- `userId`: User identifier
+- `totalAttempts`: Total submissions
+- `successfulAttempts`: Correct submissions
+- `successRate`: Success percentage
+- `lastAttemptAt`: Last submission time
+
+### Hint
+- `hintId`: Unique hint ID
+- `questionId`: Associated question
+- `hintText`: Hint content
+- `difficulty`: basic/intermediate/advanced
+
+### LeaderboardEntry
+- `rank`: Position on leaderboard
+- `userId`: User identifier
+- `username`: Display name
+- `totalScore`: Calculated score
+- `fastestSubmissionTime`: Best submission time
+- `successRate`: Success percentage
+
+## What You Would Improve With More Time
+
+1. **Database Integration**: Replace JSON files with MongoDB/PostgreSQL for scalability
+2. **Authentication**: Add JWT-based user authentication and authorization
+3. **Advanced Evaluation**: Implement actual code execution with sandboxing (Docker containers)
+4. **Caching**: Add Redis for caching frequently accessed data
+5. **Rate Limiting**: Implement rate limiting to prevent abuse
+6. **WebSocket Support**: Real-time leaderboard updates
+7. **Code Quality Metrics**: Track code complexity, execution time, memory usage
+8. **Admin Dashboard**: UI for managing questions and viewing analytics
+9. **Email Notifications**: Send daily question reminders to users
+10. **API Documentation**: Swagger/OpenAPI documentation
+11. **Performance Optimization**: Database indexing, query optimization
+12. **Monitoring & Logging**: Comprehensive logging with ELK stack or similar
+
 ## License
 
 MIT
