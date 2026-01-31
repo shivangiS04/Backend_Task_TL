@@ -4,9 +4,15 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm ci --only=production
+RUN npm ci
 
-COPY dist ./dist
+COPY src ./src
+
+COPY tsconfig.json ./
+
+RUN npm run build
+
+RUN npm ci --only=production
 
 EXPOSE 3000
 
